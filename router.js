@@ -9,7 +9,6 @@ function OnStartUp() {
 
 OnStartUp();
 
-/* Obsługa kliknięć w menu */
 document.querySelector('#about-link').addEventListener('click', () => {
     let stateObj = { page: 'about' };
     document.title = 'About';
@@ -24,7 +23,6 @@ document.querySelector('#contact-link').addEventListener('click', () => {
     RenderContactPage();
 });
 
-/* Renderowanie stron */
 function RenderAboutPage() {
     document.querySelector('main').innerHTML = `
         <h1 class="title">About Me</h1>
@@ -55,7 +53,6 @@ function RenderContactPage() {
     });
 }
 
-/* Obsługa przycisków Wstecz/Dalej */
 function popStateHandler() {
     let loc = window.location.href.toString().split(window.location.host)[1];
 
@@ -69,7 +66,7 @@ function popStateHandler() {
 
 window.onpopstate = popStateHandler;
 
-/* 🔥 Przełączanie motywu */
 document.getElementById('theme-toggle').addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
 });
+
