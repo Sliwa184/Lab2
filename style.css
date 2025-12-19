@@ -39,7 +39,6 @@ main {
     font-size: 3rem;
 }
 
-/* 🔥 Ciemny motyw */
 body.dark-mode {
     background-color: #121212;
     color: #ffffff;
@@ -52,3 +51,4 @@ body.dark-mode {
 .dark-mode .header-link:hover {
     border-bottom: 1px solid #ffffff;
 }
+
